@@ -1,0 +1,5 @@
+[0m[[0mdebug[0m] [0mOther repositories:[0m
+[0m[[0mdebug[0m] [0mDefault repositories:[0m
+[0m[[0mdebug[0m] [0mUsing inline dependencies specified in Scala.[0m
+[0m[[33mwarn[0m] [0mBinary version (0.1.1-bin-20170502-df22149-NIGHTLY) for dependency ch.epfl.lamp#scala-library;0.1.1-bin-20170502-df22149-NIGHTLY[0m
+[0m[[33mwarn[0m] [0m	in typedactors#typedactors_0.1;0.1 differs from Scala binary version in project (0.1).[0m

@@ -1,0 +1,54 @@
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
+[0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set(/home/divesh/GitRepos/CurrentHaverfordClasswork/2_Sophomore_Year/2_Semester/CoCoInSystems/CS356Lab8/src/Help1/Issue.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/home/divesh/GitRepos/CurrentHaverfordClasswork/2_Sophomore_Year/2_Semester/CoCoInSystems/CS356Lab8/src/Help1/Issue.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/divesh/GitRepos/CurrentHaverfordClasswork/2_Sophomore_Year/2_Semester/CoCoInSystems/CS356Lab8/src/Help1/Issue.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/divesh/GitRepos/CurrentHaverfordClasswork/2_Sophomore_Year/2_Semester/CoCoInSystems/CS356Lab8/src/Help1/Issue.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/divesh/GitRepos/CurrentHaverfordClasswork/2_Sophomore_Year/2_Semester/CoCoInSystems/CS356Lab8/src/Help1/target/scala-2.11/classes...[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.15:component from component compiler for Scala 2.11.7[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.15:component from component compiler for Scala 2.11.7[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 476999e7, interfacing (CompilerInterface) with Scala compiler version 2.11.7[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes:/home/divesh/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/divesh/GitRepos/CurrentHaverfordClasswork/2_Sophomore_Year/2_Semester/CoCoInSystems/CS356Lab8/src/Help1/target/scala-2.11/classes:/home/divesh/.ivy2/cache/com.chuusai/shapeless_2.11/bundles/shapeless_2.11-2.2.4.jar[0m
+[0m[[33mwarn[0m] [0m/home/divesh/GitRepos/CurrentHaverfordClasswork/2_Sophomore_Year/2_Semester/CoCoInSystems/CS356Lab8/src/Help1/Issue.scala:28: abstract type A in type pattern Test.LTENat[A,B] is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m        LTEZero(y) match {case r: LTENat[A,B] => Some(r)}[0m
+[0m[[33mwarn[0m] [0m                                  ^[0m
+[0m[[33mwarn[0m] [0m/home/divesh/GitRepos/CurrentHaverfordClasswork/2_Sophomore_Year/2_Semester/CoCoInSystems/CS356Lab8/src/Help1/Issue.scala:33: abstract type A in type pattern Test.LTENat[A,B] is unchecked since it is eliminated by erasure[0m
+[0m[[33mwarn[0m] [0m            LTESucc(pf) match {case r:LTENat[A,B] => Some(r)}[0m
+[0m[[33mwarn[0m] [0m                                      ^[0m
+[0m[[31merror[0m] [0m/home/divesh/GitRepos/CurrentHaverfordClasswork/2_Sophomore_Year/2_Semester/CoCoInSystems/CS356Lab8/src/Help1/Issue.scala:17: class LTEZero needs to be abstract, since:[0m
+[0m[[31merror[0m] [0mit has 2 unimplemented members.[0m
+[0m[[31merror[0m] [0m/** As seen from class LTEZero, the missing signatures are as follows.[0m
+[0m[[31merror[0m] [0m *  For convenience, these are usable as stub implementations.[0m
+[0m[[31merror[0m] [0m */[0m
+[0m[[31merror[0m] [0m  def cast(t: Any): Option[Test.LTENat[Test.Z,A]] = ???[0m
+[0m[[31merror[0m] [0m  def describe: String = ???[0m
+[0m[[31merror[0m] [0mcase class LTEZero[A <: Nat](x: A) extends LTENat[Z, A][0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/divesh/GitRepos/CurrentHaverfordClasswork/2_Sophomore_Year/2_Semester/CoCoInSystems/CS356Lab8/src/Help1/Issue.scala:18: class LTESucc needs to be abstract, since:[0m
+[0m[[31merror[0m] [0mit has 2 unimplemented members.[0m
+[0m[[31merror[0m] [0m/** As seen from class LTESucc, the missing signatures are as follows.[0m
+[0m[[31merror[0m] [0m *  For convenience, these are usable as stub implementations.[0m
+[0m[[31merror[0m] [0m */[0m
+[0m[[31merror[0m] [0m  def cast(t: Any): Option[Test.LTENat[Test.S[A],Test.S[B]]] = ???[0m
+[0m[[31merror[0m] [0m  def describe: String = ???[0m
+[0m[[31merror[0m] [0mcase class LTESucc[A <: Nat, B <: Nat](x: LTENat [A, B])[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[33mwarn[0m] [0mtwo warnings found[0m
+[0m[[31merror[0m] [0mtwo errors found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+[0m[[31merror[0m] [0m(compile:[31mcompileIncremental[0m) Compilation failed[0m

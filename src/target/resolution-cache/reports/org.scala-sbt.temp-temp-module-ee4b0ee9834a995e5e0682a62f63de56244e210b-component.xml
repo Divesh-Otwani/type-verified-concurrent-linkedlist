@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.scala-sbt.temp"
+		module="temp-module-ee4b0ee9834a995e5e0682a62f63de56244e210b"
+		revision="0.1.1-bin-20170502-df22149-NIGHTLY"
+		conf="component"
+		confs="component"
+		date="20170505123713"/>
+	<dependencies>
+		<module organisation="ch.epfl.lamp" name="dotty-sbt-bridge">
+			<revision name="0.1.1-bin-20170502-df22149-NIGHTLY" status="release" pubdate="20170503203127" resolver="public" artresolver="public" homepage="https://github.com/lampepfl/dotty" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD New" url="https://github.com/lampepfl/dotty/blob/master/LICENSE.md"/>
+				<metadata-artifact status="successful" details="" size="3177" time="278" location="/home/divesh/.ivy2/cache/ch.epfl.lamp/dotty-sbt-bridge/ivy-0.1.1-bin-20170502-df22149-NIGHTLY.xml" searched="true" original-local-location="/home/divesh/.ivy2/cache/ch.epfl.lamp/dotty-sbt-bridge/ivy-0.1.1-bin-20170502-df22149-NIGHTLY.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/epfl/lamp/dotty-sbt-bridge/0.1.1-bin-20170502-df22149-NIGHTLY/dotty-sbt-bridge-0.1.1-bin-20170502-df22149-NIGHTLY.pom"/>
+				<caller organisation="org.scala-sbt.temp" name="temp-module-ee4b0ee9834a995e5e0682a62f63de56244e210b" conf="component" rev="0.1.1-bin-20170502-df22149-NIGHTLY" rev-constraint-default="0.1.1-bin-20170502-df22149-NIGHTLY" rev-constraint-dynamic="0.1.1-bin-20170502-df22149-NIGHTLY" callerrev="0.1.1-bin-20170502-df22149-NIGHTLY"/>
+				<artifacts>
+					<artifact name="dotty-sbt-bridge" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="6981" time="312" location="/home/divesh/.ivy2/cache/ch.epfl.lamp/dotty-sbt-bridge/srcs/dotty-sbt-bridge-0.1.1-bin-20170502-df22149-NIGHTLY-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/epfl/lamp/dotty-sbt-bridge/0.1.1-bin-20170502-df22149-NIGHTLY/dotty-sbt-bridge-0.1.1-bin-20170502-df22149-NIGHTLY-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.epfl.lamp" name="dotty-compiler_0.1">
+			<revision name="0.1.1-bin-20170502-df22149-NIGHTLY" status="release" pubdate="20170503203119" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lampepfl/dotty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+				<license name="BSD New" url="https://github.com/lampepfl/dotty/blob/master/LICENSE.md"/>
+				<metadata-artifact status="no" details="" size="3801" time="0" location="/home/divesh/.ivy2/cache/ch.epfl.lamp/dotty-compiler_0.1/ivy-0.1.1-bin-20170502-df22149-NIGHTLY.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/epfl/lamp/dotty-compiler_0.1/0.1.1-bin-20170502-df22149-NIGHTLY/dotty-compiler_0.1-0.1.1-bin-20170502-df22149-NIGHTLY.pom"/>
+				<caller organisation="ch.epfl.lamp" name="dotty-sbt-bridge" conf="default, compile, runtime, master" rev="0.1.1-bin-20170502-df22149-NIGHTLY" rev-constraint-default="0.1.1-bin-20170502-df22149-NIGHTLY" rev-constraint-dynamic="0.1.1-bin-20170502-df22149-NIGHTLY" callerrev="0.1.1-bin-20170502-df22149-NIGHTLY"/>
+				<artifacts>
+					<artifact name="dotty-compiler_0.1" type="jar" ext="jar" status="no" details="" size="8451640" time="0" location="/home/divesh/.ivy2/cache/ch.epfl.lamp/dotty-compiler_0.1/jars/dotty-compiler_0.1-0.1.1-bin-20170502-df22149-NIGHTLY.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/epfl/lamp/dotty-compiler_0.1/0.1.1-bin-20170502-df22149-NIGHTLY/dotty-compiler_0.1-0.1.1-bin-20170502-df22149-NIGHTLY.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.0.1" status="release" pubdate="20140416052108" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3137" time="0" location="/home/divesh/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1.pom"/>
+				<caller organisation="ch.epfl.lamp" name="dotty-compiler_0.1" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="0.1.1-bin-20170502-df22149-NIGHTLY"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="bundle" ext="jar" status="no" details="" size="655685" time="0" location="/home/divesh/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.sbt" name="sbt-interface">
+			<revision name="0.13.15" status="release" pubdate="20170430235844" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-sbt.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2655" time="0" location="/home/divesh/.ivy2/cache/com.typesafe.sbt/sbt-interface/ivy-0.13.15.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/sbt/sbt-interface/0.13.15/sbt-interface-0.13.15.pom"/>
+				<caller organisation="ch.epfl.lamp" name="dotty-compiler_0.1" conf="compile, runtime" rev="0.13.15" rev-constraint-default="0.13.15" rev-constraint-dynamic="0.13.15" callerrev="0.1.1-bin-20170502-df22149-NIGHTLY"/>
+				<caller organisation="ch.epfl.lamp" name="dotty-sbt-bridge" conf="default, compile, runtime, master" rev="0.13.15" rev-constraint-default="0.13.15" rev-constraint-dynamic="0.13.15" callerrev="0.1.1-bin-20170502-df22149-NIGHTLY"/>
+				<artifacts>
+					<artifact name="sbt-interface" type="jar" ext="jar" status="no" details="" size="53049" time="0" location="/home/divesh/.ivy2/cache/com.typesafe.sbt/sbt-interface/jars/sbt-interface-0.13.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/sbt/sbt-interface/0.13.15/sbt-interface-0.13.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-asm">
+			<revision name="5.1.0-scala-2" status="release" pubdate="20170216043302" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2475" time="0" location="/home/divesh/.ivy2/cache/org.scala-lang.modules/scala-asm/ivy-5.1.0-scala-2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/5.1.0-scala-2/scala-asm-5.1.0-scala-2.pom"/>
+				<caller organisation="ch.epfl.lamp" name="dotty-compiler_0.1" conf="compile, runtime" rev="5.1.0-scala-2" rev-constraint-default="5.1.0-scala-2" rev-constraint-dynamic="5.1.0-scala-2" callerrev="0.1.1-bin-20170502-df22149-NIGHTLY"/>
+				<artifacts>
+					<artifact name="scala-asm" type="bundle" ext="jar" status="no" details="" size="237062" time="0" location="/home/divesh/.ivy2/cache/org.scala-lang.modules/scala-asm/bundles/scala-asm-5.1.0-scala-2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/5.1.0-scala-2/scala-asm-5.1.0-scala-2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.epfl.lamp" name="dotty-library_0.1">
+			<revision name="0.1.1-bin-20170502-df22149-NIGHTLY" status="release" pubdate="20170503203131" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lampepfl/dotty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="BSD New" url="https://github.com/lampepfl/dotty/blob/master/LICENSE.md"/>
+				<metadata-artifact status="no" details="" size="2982" time="0" location="/home/divesh/.ivy2/cache/ch.epfl.lamp/dotty-library_0.1/ivy-0.1.1-bin-20170502-df22149-NIGHTLY.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/epfl/lamp/dotty-library_0.1/0.1.1-bin-20170502-df22149-NIGHTLY/dotty-library_0.1-0.1.1-bin-20170502-df22149-NIGHTLY.pom"/>
+				<caller organisation="ch.epfl.lamp" name="dotty-compiler_0.1" conf="compile, runtime" rev="0.1.1-bin-20170502-df22149-NIGHTLY" rev-constraint-default="0.1.1-bin-20170502-df22149-NIGHTLY" rev-constraint-dynamic="0.1.1-bin-20170502-df22149-NIGHTLY" callerrev="0.1.1-bin-20170502-df22149-NIGHTLY"/>
+				<artifacts>
+					<artifact name="dotty-library_0.1" type="jar" ext="jar" status="no" details="" size="254159" time="0" location="/home/divesh/.ivy2/cache/ch.epfl.lamp/dotty-library_0.1/jars/dotty-library_0.1-0.1.1-bin-20170502-df22149-NIGHTLY.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/epfl/lamp/dotty-library_0.1/0.1.1-bin-20170502-df22149-NIGHTLY/dotty-library_0.1-0.1.1-bin-20170502-df22149-NIGHTLY.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.11" status="release" pubdate="20170413155043" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.11/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2829" time="0" location="/home/divesh/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.11/scala-reflect-2.11.11.pom"/>
+				<caller organisation="ch.epfl.lamp" name="dotty-library_0.1" conf="compile, runtime" rev="2.11.11" rev-constraint-default="2.11.11" rev-constraint-dynamic="2.11.11" callerrev="0.1.1-bin-20170502-df22149-NIGHTLY"/>
+				<caller organisation="ch.epfl.lamp" name="dotty-compiler_0.1" conf="compile, runtime" rev="2.11.11" rev-constraint-default="2.11.11" rev-constraint-dynamic="2.11.11" callerrev="0.1.1-bin-20170502-df22149-NIGHTLY"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4602981" time="0" location="/home/divesh/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.11/scala-reflect-2.11.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.11" status="release" pubdate="20170413155031" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.11/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2656" time="0" location="/home/divesh/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.11/scala-library-2.11.11.pom"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.11.11" rev-constraint-default="2.11.11" rev-constraint-dynamic="2.11.11" callerrev="2.11.11"/>
+				<caller organisation="ch.epfl.lamp" name="dotty-library_0.1" conf="compile, runtime" rev="2.11.11" rev-constraint-default="2.11.11" rev-constraint-dynamic="2.11.11" callerrev="0.1.1-bin-20170502-df22149-NIGHTLY"/>
+				<caller organisation="ch.epfl.lamp" name="dotty-compiler_0.1" conf="compile, runtime" rev="2.11.11" rev-constraint-default="2.11.11" rev-constraint-dynamic="2.11.11" callerrev="0.1.1-bin-20170502-df22149-NIGHTLY"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-interface" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.13.15"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0.1"/>
+				<caller organisation="ch.epfl.lamp" name="dotty-sbt-bridge" conf="default, compile, runtime, master" rev="2.11.11" rev-constraint-default="2.11.11" rev-constraint-dynamic="2.11.11" callerrev="0.1.1-bin-20170502-df22149-NIGHTLY"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5748808" time="0" location="/home/divesh/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.11/scala-library-2.11.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.11.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.11.11"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.10.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.11.11"/>
+				<caller organisation="com.typesafe.sbt" name="sbt-interface" conf="compile, runtime" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.13.15"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.epfl.lamp" name="dotty-interfaces">
+			<revision name="0.1.1-bin-20170502-df22149-NIGHTLY" status="release" pubdate="20170503203118" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lampepfl/dotty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="BSD New" url="https://github.com/lampepfl/dotty/blob/master/LICENSE.md"/>
+				<metadata-artifact status="no" details="" size="2519" time="0" location="/home/divesh/.ivy2/cache/ch.epfl.lamp/dotty-interfaces/ivy-0.1.1-bin-20170502-df22149-NIGHTLY.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/epfl/lamp/dotty-interfaces/0.1.1-bin-20170502-df22149-NIGHTLY/dotty-interfaces-0.1.1-bin-20170502-df22149-NIGHTLY.pom"/>
+				<caller organisation="ch.epfl.lamp" name="dotty-compiler_0.1" conf="compile, runtime" rev="0.1.1-bin-20170502-df22149-NIGHTLY" rev-constraint-default="0.1.1-bin-20170502-df22149-NIGHTLY" rev-constraint-dynamic="0.1.1-bin-20170502-df22149-NIGHTLY" callerrev="0.1.1-bin-20170502-df22149-NIGHTLY"/>
+				<artifacts>
+					<artifact name="dotty-interfaces" type="jar" ext="jar" status="no" details="" size="3522" time="0" location="/home/divesh/.ivy2/cache/ch.epfl.lamp/dotty-interfaces/jars/dotty-interfaces-0.1.1-bin-20170502-df22149-NIGHTLY.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/epfl/lamp/dotty-interfaces/0.1.1-bin-20170502-df22149-NIGHTLY/dotty-interfaces-0.1.1-bin-20170502-df22149-NIGHTLY.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

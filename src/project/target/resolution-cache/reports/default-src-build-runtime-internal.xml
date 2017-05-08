@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="src-build"
+		revision="0.1-SNAPSHOT"
+		extra-scalaVersion="2.10"
+		extra-sbtVersion="0.13"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20170505125042"/>
+	<dependencies>
+		<module organisation="ch.epfl.lamp" name="sbt-dotty">
+			<revision name="0.1.0-RC4" status="release" pubdate="20170501163501" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lampepfl/sbt-dotty" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD New" url="https://github.com/lampepfl/sbt-dotty/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2971" time="0" location="/home/divesh/.ivy2/cache/scala_2.10/sbt_0.13/ch.epfl.lamp/sbt-dotty/ivy-0.1.0-RC4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/epfl/lamp/sbt-dotty_2.10_0.13/0.1.0-RC4/sbt-dotty-0.1.0-RC4.pom"/>
+				<caller organisation="default" name="src-build" conf="compile, runtime-internal, runtime, optional" rev="0.1.0-RC4" rev-constraint-default="0.1.0-RC4" rev-constraint-dynamic="0.1.0-RC4" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-dotty" type="jar" ext="jar" status="no" details="" size="16249" time="0" location="/home/divesh/.ivy2/cache/scala_2.10/sbt_0.13/ch.epfl.lamp/sbt-dotty/jars/sbt-dotty-0.1.0-RC4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/epfl/lamp/sbt-dotty_2.10_0.13/0.1.0-RC4/sbt-dotty-0.1.0-RC4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

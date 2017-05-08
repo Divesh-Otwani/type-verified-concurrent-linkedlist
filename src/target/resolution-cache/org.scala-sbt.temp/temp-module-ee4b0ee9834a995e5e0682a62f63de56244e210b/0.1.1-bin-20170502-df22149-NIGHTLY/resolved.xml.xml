@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="org.scala-sbt.temp"
+		module="temp-module-ee4b0ee9834a995e5e0682a62f63de56244e210b"
+		revision="0.1.1-bin-20170502-df22149-NIGHTLY"
+		status="integration"
+		publication="20170505123713"
+	/>
+	<configurations>
+		<conf name="component" visibility="private" description=""/>
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		<dependency org="ch.epfl.lamp" name="dotty-sbt-bridge" rev="0.1.1-bin-20170502-df22149-NIGHTLY" conf="component->default(compile)">
+			<artifact name="dotty-sbt-bridge" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+	</dependencies>
+</ivy-module>
