@@ -120,7 +120,7 @@ object Main extends App {
     ): Behavior[NodeMsg[N]] = {
 
     Stateful[NodeMsg[N]] { (ctx, msg) =>
-      //println(s"Node $n, mode $state got msg $msg")
+      if (debug) println(s"Node $n, mode $state got msg $msg")
       state match {
         case Active() =>
           msg match {
@@ -242,7 +242,7 @@ object Main extends App {
     head: Option[ActorRef[NodeMsg[N]]] = None
     ): Behavior[LLMsg] = {
     Stateful[LLMsg] { (ctx, msg) =>
-      //println(s"LL got msg $msg")
+      if (debug) println(s"LL got msg $msg")
       msg match {
         case ChangeHead(newhead) =>
           linkedList(newhead)
@@ -317,7 +317,7 @@ object Main extends App {
           case PreStart =>
             val llref = ctx.spawn(linkedList(), "theLL")
             val numops = 100
-            val numtds = 3
+            val numtds = 2
             var threads: ArrayBuffer[Thread] = ArrayBuffer()
             for (i <- 1 to numtds){
               threads += new Tester(llref, numops)
@@ -335,6 +335,7 @@ object Main extends App {
     )
 
   val system = ActorSystem("system", main)
+  val debug = false
 
   def toInt[N <: Nat](x: N): Int = {
     x match {
