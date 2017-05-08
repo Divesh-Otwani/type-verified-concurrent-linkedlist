@@ -242,7 +242,7 @@ object Main extends App {
     head: Option[ActorRef[NodeMsg[N]]] = None
     ): Behavior[LLMsg] = {
     Stateful[LLMsg] { (ctx, msg) =>
-      println(s"LL got msg $msg")
+      //println(s"LL got msg $msg")
       msg match {
         case ChangeHead(newhead) =>
           linkedList(newhead)
@@ -316,8 +316,8 @@ object Main extends App {
         sig match {
           case PreStart =>
             val llref = ctx.spawn(linkedList(), "theLL")
-            val numops = 10000
-            val numtds = 10
+            val numops = 100
+            val numtds = 3
             var threads: ArrayBuffer[Thread] = ArrayBuffer()
             for (i <- 1 to numtds){
               threads += new Tester(llref, numops)
