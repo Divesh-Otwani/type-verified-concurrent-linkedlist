@@ -7,7 +7,7 @@ with typed verification
 to ensure that the list remains ordered.
 
 **You can concurrently delete and insert elements 
-and the list remains ordered.**
+and the type system _proves_ the list remains ordered.**
 
 I used typed actors ([see here](https://doc.akka.io/docs/akka/2.5/typed-actors.html)) and some cool
 curry-howard isomorphism stuff to get things done.
