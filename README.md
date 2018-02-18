@@ -1,9 +1,20 @@
 # CS356Lab8
 
-This is a private repo for my lab 8 final project. 
-Essentialy, I implement a singly linked list
-with some (not a lot) typed verification
+This is my final project for my Concurrency class.
+
+I implement a concurrent ordered singly linked list
+with typed verification
 to ensure that the list remains ordered.
+
+**You can concurrently delete and insert elements 
+and the list remains ordered.**
+
+I used typed actors ([see here](https://doc.akka.io/docs/akka/2.5/typed-actors.html)) and some cool
+curry-howard isomorphism stuff to get things done.
+
+There is a tiny part in /src/Proofs.scala where Scala's type system 
+doesn't do what I'd like and I needed to use type coercion at that point.
+
 
 
 ## The Typed Interface
@@ -22,8 +33,12 @@ abstract class LTENat[A <: Nat, B <: Nat]
 case class LTEZero[A <: Nat]() extends LTENat[Z, A]
 case class LTESucc[A <: Nat, B <: Nat](x: LTENat[A, B])
     extends LTENat[S[A], S[B]]
-
-
+/*
+These last 4 lines allow us to build a proof
+of any less than relationship. Each object of some type
+corresponds to a proof of a less than relationship 
+(the curry howard correspondence, informally).
+*/
 
 sealed trait NodeMsg[N <: Nat] // node is val indexed
 case class Insert[A <: Nat, N <: Nat, P <: Nat]
@@ -57,17 +72,6 @@ case class ChangeHead[N <: Nat](newhead: Option[ActorRef[NodeMsg[N]]])
 * Nodes can be active, inactive or hibernating.
 * In order to force constraints by the LTE GADT, we need to pass specific kinds of messages. So, we index the message type and the thigns messages have to help this out. Main idea: when you hold GADTs as proofs, you should index your other types so you can easily construct those proofs
 * We cast in two places. First, we use casts in the Proofs.scala file for querying LTE's and transitivity. Second, we use it once to cast a LTEZero when making a fake adapter actor for the Linked List actor.
-
-
-## Presentation Outline
-
-- State the interface for typed actors: the type of the messages.
-Quickly walk through the example.
-- State the general design and show the LTE Gadt.
-- Show the interface for message sending and note the significance.
-- Mention where you cast and why that means if we don't error at runtime, we are correct.
-- Demo with many threads.
-- Walk through the insert method if time.
 
 
 
